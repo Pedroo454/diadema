@@ -48,7 +48,7 @@ export function About() {
           >
             <div className="absolute inset-0 bg-red-600 blur-[100px] opacity-20"></div>
             <img 
-              src="https://picsum.photos/seed/gtacar/800/600" 
+              src="https://picsum.photos/seed/policecar/800/600" 
               alt="Roleplay Scene" 
               className="relative z-10 rounded-lg shadow-2xl border border-zinc-800 grayscale hover:grayscale-0 transition-all duration-500"
               referrerPolicy="no-referrer"

@@ -47,7 +47,7 @@ export function Staff() {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                src="https://picsum.photos/seed/staff/500/500" 
+                src="https://picsum.photos/seed/securityteam/500/500" 
                 alt="Staff Team" 
                 className="relative z-10 rounded-xl border-2 border-zinc-800 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500"
                 referrerPolicy="no-referrer"

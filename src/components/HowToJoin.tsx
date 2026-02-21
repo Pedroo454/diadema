@@ -76,7 +76,7 @@ export function HowToJoin() {
           <div className="relative hidden lg:block">
             <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-transparent rounded-2xl transform rotate-3"></div>
             <img 
-              src="https://picsum.photos/seed/gtacharacter/600/800" 
+              src="https://picsum.photos/seed/gamer/600/800" 
               alt="Character Creation" 
               className="rounded-2xl shadow-2xl relative z-10 border border-zinc-800"
               referrerPolicy="no-referrer"

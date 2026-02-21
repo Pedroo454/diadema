@@ -7,7 +7,7 @@ export function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/seed/nightcity/1920/1080?blur=2" 
+          src="https://picsum.photos/seed/losangelesnight/1920/1080?blur=2" 
           alt="Diadema SP Background" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

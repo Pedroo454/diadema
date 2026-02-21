@@ -1,12 +1,36 @@
 import { motion } from 'motion/react';
 
-const images = [
-  "https://picsum.photos/seed/gta1/800/600",
-  "https://picsum.photos/seed/gta2/800/600",
-  "https://picsum.photos/seed/gta3/800/600",
-  "https://picsum.photos/seed/gta4/800/600",
-  "https://picsum.photos/seed/gta5/800/600",
-  "https://picsum.photos/seed/gta6/800/600",
+const galleryItems = [
+  {
+    src: "https://picsum.photos/seed/sportscar/800/600",
+    category: "Veículos Exclusivos",
+    caption: "Frota de importados e viaturas personalizadas"
+  },
+  {
+    src: "https://picsum.photos/seed/policeaction/800/600",
+    category: "Ação Policial",
+    caption: "Operações táticas e perseguições intensas"
+  },
+  {
+    src: "https://picsum.photos/seed/hospital/800/600",
+    category: "SAMU & Resgate",
+    caption: "Equipe médica preparada para qualquer emergência"
+  },
+  {
+    src: "https://picsum.photos/seed/nightparty/800/600",
+    category: "Vida Noturna",
+    caption: "Festas e eventos exclusivos toda semana"
+  },
+  {
+    src: "https://picsum.photos/seed/meeting/800/600",
+    category: "Roleplay Sério",
+    caption: "Interações imersivas e histórias únicas"
+  },
+  {
+    src: "https://picsum.photos/seed/citynight/800/600",
+    category: "Cidade Viva",
+    caption: "Cenários urbanos detalhados e realistas"
+  },
 ];
 
 export function Gallery() {
@@ -20,21 +44,29 @@ export function Gallery() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {images.map((src, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {galleryItems.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="relative aspect-video group overflow-hidden rounded-lg cursor-pointer"
+              className="relative aspect-video group overflow-hidden rounded-xl cursor-pointer border border-zinc-800 shadow-lg"
             >
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                <span className="text-white font-bold uppercase tracking-widest border-2 border-white px-4 py-2">Ver Foto</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-90 transition-all z-10"></div>
+              
+              <div className="absolute bottom-0 left-0 right-0 p-6 z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <span className="text-red-500 text-xs font-bold uppercase tracking-wider mb-1 block">
+                  {item.category}
+                </span>
+                <h4 className="text-white font-bold text-lg leading-tight group-hover:text-red-50 transition-colors">
+                  {item.caption}
+                </h4>
               </div>
+
               <img 
-                src={src} 
-                alt={`Gallery ${index}`} 
+                src={item.src} 
+                alt={item.category} 
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
