@@ -33,7 +33,7 @@ export function About() {
                 <p className="text-sm text-gray-500 uppercase">Uptime</p>
               </div>
               <div className="bg-zinc-900/50 p-4 border-l-4 border-red-600">
-                <h4 className="text-2xl font-bold text-white mb-1">+5k</h4>
+                <h4 className="text-2xl font-bold text-white mb-1">+1k</h4>
                 <p className="text-sm text-gray-500 uppercase">Jogadores</p>
               </div>
             </div>
@@ -48,7 +48,7 @@ export function About() {
           >
             <div className="absolute inset-0 bg-red-600 blur-[100px] opacity-20"></div>
             <img 
-              src="https://picsum.photos/seed/policecar/800/600" 
+              src="https://c4.wallpaperflare.com/wallpaper/862/266/461/grand-theft-auto-v-fivem-mitsubishi-evolution-mitsubishi-lancer-evo-x-hd-wallpaper-preview.jpg" 
               alt="Roleplay Scene" 
               className="relative z-10 rounded-lg shadow-2xl border border-zinc-800 grayscale hover:grayscale-0 transition-all duration-500"
               referrerPolicy="no-referrer"
